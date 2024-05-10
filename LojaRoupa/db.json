@@ -1,0 +1,36 @@
+{
+    "products":[
+        {
+            "stars":5,
+            "name":"Body Santorini vermelho",
+            "price":"239",
+            "desconto":"4x de R$60,00 sem juros",
+            "image1":"./assets/model1.webp",
+            "image2":"./assets/model1hover.webp"
+        },
+        {
+            "stars":5,
+            "name":"Body Santorini Preto",
+            "price":"239",
+            "desconto":"4x de R$60,00 sem juros",
+            "image1":"./assets/model2.webp",
+            "image2":"./assets/model2hover.webp"
+        },
+        {
+            "stars":5,
+            "name":"Body Preto",
+            "price":"239",
+            "desconto":"4x de R$60,00 sem juros",
+            "image1":"./assets/model3.webp",
+            "image2":"./assets/mode3hover.webp"
+        },
+        {
+            "stars":5,
+            "name":"Body preto2",
+            "price":"239",
+            "desconto":"4x de R$60,00 sem juros",
+            "image1":"./assets/model3.webp",
+            "image2":"./assets/mode3hover.webp"
+        }
+    ]
+}

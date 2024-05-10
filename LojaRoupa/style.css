@@ -591,12 +591,13 @@ body {
             gap: 20px;
             align-items: center;
             justify-content: center;
-            overflow-y: scroll;
+            overflow: hidden;
+            
 
             .swiper-slide {
                 gap: 5px;
                 max-width: 23%;
-                max-height: 450px;
+                max-height: 670px;
                 display: flex;
                 flex-direction: column;
                 align-items: start;
@@ -1312,6 +1313,38 @@ body {
                             width: 250px;
                             height: 250px;
                         }
+                    }
+                }
+            }
+        }
+        .search{
+            min-width: 100%;
+            height: auto;
+            position: absolute;
+            .headerSearch{
+                max-width: 100%;
+            }
+            .inputContainer{
+                padding: 0;
+                max-width: 90%;
+                i{
+                    padding: 0 20px;
+                }
+                
+            }
+            .searchItems{
+                overflow-y: hidden;
+                flex-direction: column;
+              
+                .swiper-slide{
+                    margin-top: 20px;
+                    max-width: 200px;
+                    .images{
+                        width: 200px;
+                    }
+                    .like{
+                         top:0;
+                         right: 0;
                     }
                 }
             }

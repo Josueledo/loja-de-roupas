@@ -94,7 +94,8 @@ body {
                         width: 20px;
                         height: 20px;
                     }
-                    .favoriteCount{
+
+                    .favoriteCount {
                         position: absolute;
                         width: 19px;
                         height: 19px;
@@ -108,51 +109,56 @@ body {
                         justify-content: center;
                         transition: all .3s;
                     }
-                    .favoriteCount.hidden{
+
+                    .favoriteCount.hidden {
                         width: 0;
                         display: none;
                     }
                 }
-                .user:hover .hoverUser{
+
+                .user:hover .hoverUser {
                     opacity: 1;
                     display: flex;
                 }
-               .user{
-                position: relative;
-                .hoverUser{
-                    background-color: var(--black);
-                    padding: 5px;
-                    position: absolute;
-                    display: flex;
-                    width: 160px;
-                    border-radius: 10px;
-                    bottom: -90px;
-                    left: -50px;
-                    opacity: 0;
-                    transition: all .3s;
-                    display: none;
-                    ul{
-                        padding: 0 15px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 70px;
-                        flex-direction: column;
 
-                        li{
-                            width: 100%;
-                            color: var(--white);
-                            list-style: none;
-                            font-size: .8rem;
+                .user {
+                    position: relative;
+
+                    .hoverUser {
+                        background-color: var(--black);
+                        padding: 5px;
+                        position: absolute;
+                        display: flex;
+                        width: 160px;
+                        border-radius: 10px;
+                        bottom: -90px;
+                        left: -50px;
+                        opacity: 0;
+                        transition: all .3s;
+                        display: none;
+
+                        ul {
+                            padding: 0 15px;
                             display: flex;
                             align-items: center;
-                            justify-content: start;
-                            padding: 0;
+                            justify-content: center;
+                            width: 100%;
+                            height: 70px;
+                            flex-direction: column;
+
+                            li {
+                                width: 100%;
+                                color: var(--white);
+                                list-style: none;
+                                font-size: .8rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                padding: 0;
+                            }
                         }
                     }
                 }
-               }
 
                 .cart-btn {
                     position: relative;
@@ -522,10 +528,12 @@ body {
             }
         }
     }
-    .search.hidden{
+
+    .search.hidden {
         display: none;
     }
-    .search{
+
+    .search {
         width: 100%;
         min-height: 100%;
         background-color: var(--white);
@@ -536,7 +544,8 @@ body {
         justify-content: start;
         flex-direction: column;
         z-index: 100;
-        .headerSearch{
+
+        .headerSearch {
             width: 100%;
             display: flex;
             align-items: center;
@@ -544,14 +553,17 @@ body {
             gap: 20px;
             padding: 20px;
             border: 1px solid gray;
-            i{
+
+            i {
                 font-size: 1.4rem;
             }
-            i:hover{
+
+            i:hover {
                 cursor: pointer;
             }
         }
-        .inputContainer{
+
+        .inputContainer {
             margin-top: 30px;
             padding: 0 10px;
             width: 300px;
@@ -559,16 +571,19 @@ body {
             align-items: center;
             justify-content: space-between;
             border: 1px solid rgb(165, 165, 165);
-            input{
+
+            input {
                 padding: 10px;
                 border: none;
                 outline: none;
             }
-            i{
+
+            i {
                 color: gray;
             }
         }
-        .searchItems{
+
+        .searchItems {
             padding: 15px;
             width: 100%;
             height: 100%;
@@ -577,6 +592,7 @@ body {
             align-items: center;
             justify-content: center;
             overflow-y: scroll;
+
             .swiper-slide {
                 gap: 5px;
                 max-width: 23%;
@@ -646,7 +662,7 @@ body {
                     bottom: 125px;
                     right: 10px;
                     font-size: 1.4rem;
-                    
+
                     i {
                         border-radius: 50px;
                         align-items: center;
@@ -657,6 +673,7 @@ body {
                         width: 40px;
                         height: 40px;
                     }
+
                     i.active {
                         color: rgb(165, 29, 29);
                         background-color: rgb(255, 161, 189);
@@ -704,7 +721,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
 
         .favoriteHeader {
             display: flex;
@@ -725,43 +742,51 @@ body {
             i {
                 font-size: 1.5rem;
             }
-            i:hover{
+
+            i:hover {
                 cursor: pointer;
             }
         }
-        .favoriteItems{
+
+        .favoriteItems {
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: start;
             gap: 20px;
-            .item{
+
+            .item {
                 margin-top: 50px;
                 width: 150px;
                 height: 240px;
-                .headerItem{
+
+                .headerItem {
                     gap: 10px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    .imgConteiner{
+
+                    .imgConteiner {
                         width: 150px;
                         height: 150px;
                         overflow: hidden;
                         border-radius: 10px;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
-                    h1{
+
+                    h1 {
                         font-size: .9rem;
                         font-weight: 500;
                     }
                 }
-                i{
+
+                i {
                     width: 35px;
                     height: 35px;
                     background-color: rgb(219, 64, 64);
@@ -774,7 +799,8 @@ body {
                     right: 0;
                     border-bottom-left-radius: 5px;
                 }
-                i{
+
+                i {
                     cursor: pointer;
                 }
             }
@@ -783,12 +809,14 @@ body {
         .favoriteVazio {
             position: absolute;
             top: 50%;
+
             h1 {
                 font-weight: 600;
                 color: gray;
             }
         }
-        .favoriteVazio.hidden{
+
+        .favoriteVazio.hidden {
             display: none;
         }
     }
@@ -1046,7 +1074,7 @@ body {
                     bottom: 105px;
                     right: 10px;
                     font-size: 1.4rem;
-                    
+
                     i {
                         border-radius: 50px;
                         align-items: center;
@@ -1057,6 +1085,7 @@ body {
                         width: 40px;
                         height: 40px;
                     }
+
                     i.active {
                         color: rgb(165, 29, 29);
                         background-color: rgb(255, 161, 189);
@@ -1070,9 +1099,9 @@ body {
                     cursor: pointer;
                 }
 
-              
 
-              
+
+
 
 
                 .stars {
@@ -1253,28 +1282,33 @@ body {
                 }
             }
         }
-        .favorite{
+
+        .favorite {
             width: 100%;
             height: 100vh;
             top: 0;
             flex-direction: column;
-            .favoriteVazio{
-                h1{
+
+            .favoriteVazio {
+                h1 {
                     font-size: 1.2rem;
                 }
             }
-            .favoriteItems{
+
+            .favoriteItems {
                 width: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-                .item{
+
+                .item {
                     margin-top: 10px;
                     width: 250px;
                     height: 300px;
-                    .headerItem{
-                        .imgConteiner{
+
+                    .headerItem {
+                        .imgConteiner {
                             width: 250px;
                             height: 250px;
                         }
@@ -1355,6 +1389,30 @@ body {
 
         .carrinho {
             max-width: 100%;
+
+            .carrinho-container {
+                justify-content: start;
+                .item {
+                    gap: 10px;
+                    max-height: 170px;
+                    padding: 24px 0;
+                    .img-container{
+                        min-width: 90px;
+                    }
+                    .nameCount{
+                        padding: 0;
+                        h1{
+                            font-size: 1rem;
+                        }
+                    }
+                    .deletePrice{
+                        min-width: 100px;
+                        .price{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
         }
 
         #section2 {

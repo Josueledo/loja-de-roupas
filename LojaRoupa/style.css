@@ -1458,6 +1458,15 @@ body {
                     }
                 }
             }
+            .frete-container{
+                ul{
+                    li{
+                        justify-content: space-between;
+                        margin: 0;
+                        width: 200px;
+                    }
+                }
+            }
         }
 
         #section3 {

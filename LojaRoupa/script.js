@@ -454,7 +454,7 @@ function search() {
              <i class="fa-solid fa-star"></i>
            </div>
            <div class="name">${item.name}</div>
-           <div class="price">${item.price}</div>
+           <div class="price">R$ ${item.price},00</div>
            <p class="desconto">${item.desconto}</p>
          </div> 
        </div>       

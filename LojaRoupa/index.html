@@ -6,7 +6,11 @@
     <title>Store</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts/font.css" />
-    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.webp"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/ea86b4540c.js"
       crossorigin="anonymous"
@@ -240,7 +244,6 @@
 
       <div class="carrinho-container"></div>
 
-
       <div class="footer">
         <div class="total-container">
           <ul>
@@ -264,14 +267,14 @@
         <h1>Buscar</h1>
       </div>
       <div class="inputContainer">
-        <input type="text" onkeyup="search()" id="input">
+        <input type="text" onkeyup="search()" id="input" />
         <i class="fa fa-search" aria-hidden="true"></i>
       </div>
-      <div class="searchItems"></div> 
+      <div class="searchItems"></div>
     </div>
     <!-- FAVORITOS -->
     <div class="favorite hidden">
-      <div class="favoriteHeader"> 
+      <div class="favoriteHeader">
         <div>
           <h1>Lista de Favoritos</h1>
           <p>Favorite produtos para todos os momentos</p>
@@ -541,7 +544,10 @@
 
     <section id="section3">
       <h1>BEST SELLERS DA SEMANA</h1>
-      <div class="swiper items-container animate"></div>
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper items-container animate"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -597,6 +603,30 @@
     </footer>
 
     <script>
+      var swiper = new Swiper(".swiper2", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0:{
+            slidesPerView: 1
+          },
+          400:{
+            slidesPerView: 2,
+          },
+          600:{
+            slidesPerView:3
+          },
+          850:{
+            slidesPerView:4
+          }
+        }
+    
+      });
+
       var swiper = new Swiper(".mySwiper", {
         loop: true,
         pagination: {

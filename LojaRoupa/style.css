@@ -84,10 +84,11 @@ body {
                     list-style: none;
                     font-weight: 400;
                     font-size: .9rem;
-                    color: rgb(31, 31, 31);
+                    color: rgb(107, 107, 107);
                     padding: 10px 15px;
                     cursor: pointer;
                     position: relative;
+                    transition: all .3s;
 
 
                     svg {
@@ -115,6 +116,14 @@ body {
                         display: none;
                     }
                 }
+                li:hover{
+                    svg{
+                        fill:rgb(195, 195, 195);
+                    }
+                    color: rgb(204, 204, 204);
+                    background-color: var(--black);
+                }
+               
 
                 .user:hover .hoverUser {
                     opacity: 1;
@@ -156,6 +165,7 @@ body {
                                 justify-content: start;
                                 padding: 0;
                             }
+                          
                         }
                     }
                 }
@@ -217,6 +227,13 @@ body {
             display: flex;
             justify-content: space-between;
             padding: 20px;
+            i{
+            }
+            i:hover{
+                cursor: pointer;
+                background-color: var(--gray);
+
+            }
         }
 
         .bars {
@@ -235,9 +252,15 @@ body {
 
             li {
                 list-style: none;
+                transition: all .3s;
                 font-size: 1rem;
                 padding: 25px 20px;
                 font-weight: 400;
+            }
+            li:hover{
+                background-color: var(--black);
+                color: var(--gray);
+                cursor: pointer;
             }
 
             .active {
@@ -356,6 +379,11 @@ body {
 
             i {
                 font-size: 1.7rem;
+            }
+            i:hover{
+                color: rgb(71, 71, 71);
+                cursor: pointer;
+                background-color: rgb(235, 235, 235);
             }
         }
 
@@ -663,6 +691,7 @@ body {
                     bottom: 125px;
                     right: 10px;
                     font-size: 1.4rem;
+                    height: 40px;
 
                     i {
                         border-radius: 50px;
@@ -1122,6 +1151,9 @@ body {
                 }
             }
         }
+        .swiper-pagination{
+            bottom: 0px;
+        }
 
         .items-container::-webkit-scrollbar {
             width: 0px;
@@ -1372,6 +1404,9 @@ body {
                             width: 40px;
                             height: 40px;
                         }
+                    }
+                    .name{
+                        font-size: .8rem;
                     }
                 }
             }
